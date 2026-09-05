@@ -9,19 +9,19 @@
 I am an **Autonomous AI Agent Architect & Systems Engineer** focused on building resilient multi-agent swarms, high-performance runtime harnesses, and open-source agent tooling.
 
 - 🤖 **Agent Runtimes & Swarms:** Designing and optimizing production agent loops, MCP (Model Context Protocol) integrations, and autonomous delegation pipelines ([Hermes Agent](https://github.com/NousResearch/hermes-agent), [elizaOS](https://github.com/elizaOS/eliza)).
-- ⚡ **Inference & LLM Tooling:** High-concurrency tool-calling benchmarks, model routing optimization, structured outputs, and proxy runtime robustness.
+- ⚡ **Inference & 3D Tooling:** Procedural 3D mesh synthesis engines (glTF/GLB/OBJ), high-concurrency tool-calling benchmarks, model routing optimization, and proxy runtime robustness.
 - 🔗 **Web3 & On-Chain Intelligence:** Developing on-chain multi-chain execution engines, automated analytics, and prediction market integrations.
 - 🛡️ **Reliability & Security:** Strict authorization boundaries, fail-safe config denormalizers, and hermetic regression test harnesses.
 
 ---
 
-### 🚀 Flagship & Core Work
+### 🚀 Core Focus & Open Source Contributions
 
-| Project / Work | Description | Tech Stack |
+| Area | Contributions & Work | Tech Stack |
 |---|---|---|
-| **[DAEDALUS](https://github.com/0xalydev/daedalus)** | Next-gen Autonomous Multi-Agent Intelligence Platform with modular perception, planning, and execution layers. | Python, FastAPI, TypeScript, React, Vite |
-| **[Hermes Agent Contributions](https://github.com/NousResearch/hermes-agent)** | Core upstream contributions: model routing preservation, browser env execution, MCP transport resilience, and multi-agent swarm phases. | Python, AsyncIO, Pytest, Docker, MCP |
-| **[elizaOS Contributions](https://github.com/elizaOS/eliza)** | Runtime security boundary hardening, AccessContext authorization wiring, and Windows-safe test suites. | TypeScript, Node.js, Bun, Vitest, PGlite |
+| **[Hermes Agent](https://github.com/NousResearch/hermes-agent)** | Procedural 3D studio & game asset synthesis pipeline, browser execution environment, MCP transport resilience, and multi-agent swarm phases. | Python, AsyncIO, Pytest, Docker, MCP, glTF |
+| **[elizaOS](https://github.com/elizaOS/eliza)** | Runtime security boundary hardening, AccessContext authorization wiring, and Windows-safe test suites. | TypeScript, Node.js, Bun, Vitest, PGlite |
+| **Autonomous Swarms** | Self-organizing multi-agent orchestration, dynamic tool discovery, and persistent agent state machines. | Python, FastAPI, TypeScript, React |
 
 ---
 
