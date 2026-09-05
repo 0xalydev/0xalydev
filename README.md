@@ -9,19 +9,19 @@
 I am an **Autonomous AI Agent Architect & Systems Engineer** focused on building resilient multi-agent swarms, high-performance runtime harnesses, and open-source agent tooling.
 
 - 🤖 **Agent Runtimes & Swarms:** Designing and optimizing production agent loops, MCP (Model Context Protocol) integrations, and autonomous delegation pipelines ([Hermes Agent](https://github.com/NousResearch/hermes-agent), [elizaOS](https://github.com/elizaOS/eliza)).
-- ⚡ **Inference & 3D Tooling:** Procedural 3D mesh synthesis engines (glTF/GLB/OBJ), high-concurrency tool-calling benchmarks, model routing optimization, and proxy runtime robustness.
+- ⚡ **Inference & 3D Tooling:** Procedural 3D mesh synthesis engines (glTF/GLB/OBJ/Three.js/Godot), high-concurrency tool-calling benchmarks, model routing optimization, and proxy runtime robustness.
 - 🔗 **Web3 & On-Chain Intelligence:** Developing on-chain multi-chain execution engines, automated analytics, and prediction market integrations.
-- 🛡️ **Reliability & Security:** Strict authorization boundaries, fail-safe config denormalizers, and hermetic regression test harnesses.
+- 🛡️ **Reliability & Security:** Strict database salvage routines, SQLite corruption recovery, authorization boundaries, and hermetic test harnesses.
 
 ---
 
-### 🚀 Core Focus & Open Source Contributions
+### 🔥 Featured Open Source Contributions
 
-| Area | Contributions & Work | Tech Stack |
-|---|---|---|
-| **[Hermes Agent](https://github.com/NousResearch/hermes-agent)** | Procedural 3D studio & game asset synthesis pipeline, browser execution environment, MCP transport resilience, and multi-agent swarm phases. | Python, AsyncIO, Pytest, Docker, MCP, glTF |
-| **[elizaOS](https://github.com/elizaOS/eliza)** | Runtime security boundary hardening, AccessContext authorization wiring, and Windows-safe test suites. | TypeScript, Node.js, Bun, Vitest, PGlite |
-| **Autonomous Swarms** | Self-organizing multi-agent orchestration, dynamic tool discovery, and persistent agent state machines. | Python, FastAPI, TypeScript, React |
+| Repository | Pull Request / Feature | Description | Status |
+|---|---|---|---|
+| **[NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)** | [PR #103503](https://github.com/NousResearch/hermes-agent/pull/103503) | **`procedural-3d-studio`**: Complete procedural 3D mesh & game asset generation skill (glTF, GLB, OBJ, Three.js, Godot 4). | 🚀 Open |
+| **[NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)** | [PR #103547](https://github.com/NousResearch/hermes-agent/pull/103547) | **`fix(recovery)`**: Skip damaged phantom rows violating destination constraints during session salvage recovery (#102240). | 🚀 Open |
+| **[NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)** | [PR #103550](https://github.com/NousResearch/hermes-agent/pull/103550) | **`hf-inspector`**: Zero-dependency Hugging Face model metadata & GGUF quantization discovery plugin. | 🚀 Open |
 
 ---
 
