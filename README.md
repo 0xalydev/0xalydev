@@ -7,6 +7,8 @@ AI Systems Architect & Open-Source Contributor specializing in autonomous agent 
 ### 🚀 Key Open-Source Contributions & Innovations
 
 #### 🌌 **NousResearch / Hermes-Agent Ecosystem**
+- **[PR #103589](https://github.com/NousResearch/hermes-agent/pull/103589) — `fix(gateway): requeue exhausted final response on network outage for redelivery (#103575)`**
+  - Engineered an in-memory outbound delivery recovery buffer and redelivery pipeline for platform adapters (Telegram, Discord, Slack) to prevent generated response loss during sustained network outages.
 - **[PR #103581](https://github.com/NousResearch/hermes-agent/pull/103581) — `fix(agent): preserve external memory-provider tools on review fork for cache parity (#103579)`**
   - Eliminated prompt-cache misses during background evaluation by preserving byte-exact `tools[]` schema parity on review forks when external memory providers are loaded.
   - Fixes 60k+ token cold-reads on prefix-caching providers (Fireworks, Anthropic, OpenRouter) with comprehensive unit regression suite.
