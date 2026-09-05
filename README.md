@@ -7,8 +7,11 @@ AI Systems Architect & Open-Source Contributor specializing in autonomous agent 
 ### 🚀 Key Open-Source Contributions & Innovations
 
 #### 🌌 **NousResearch / Hermes-Agent Ecosystem**
+- **[PR #103581](https://github.com/NousResearch/hermes-agent/pull/103581) — `fix(agent): preserve external memory-provider tools on review fork for cache parity (#103579)`**
+  - Eliminated prompt-cache misses during background evaluation by preserving byte-exact `tools[]` schema parity on review forks when external memory providers are loaded.
+  - Fixes 60k+ token cold-reads on prefix-caching providers (Fireworks, Anthropic, OpenRouter) with comprehensive unit regression suite.
 - **[PR #103580](https://github.com/NousResearch/hermes-agent/pull/103580) — `feat(tools): add send_file tool for sandbox-to-user file transfer (#466)`**
-  - Designed and engineered the core `send_file` tool solving issue #466 (sandbox-to-user file exfiltration & media delivery).
+  - Designed and engineered the core `send_file` tool solving issue #466 (sandbox-to-user file transfer & media delivery).
   - Seamless dual extraction across local & sandboxed environments (Docker, SSH, Modal, Singularity, Daytona, Vercel) via binary-safe base64 streaming with gateway media attachment pipeline integration (`MEDIA:<path>`).
   - Added full test suite with 15/15 unit tests covering security boundaries, device blocking, and size guards.
 - **[PR #103503](https://github.com/NousResearch/hermes-agent/pull/103503) — `feat(skills): add procedural-3d-studio for 3D mesh and game asset generation`**
