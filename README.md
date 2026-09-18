@@ -1,52 +1,43 @@
-# Hi there, I'm Aly 👋
+# 0xAlyDev
 
-AI Systems Architect & Open-Source Contributor specializing in autonomous agent runtimes, sandbox orchestration, procedural generation, and distributed LLM infrastructure.
-
----
-
-### 🚀 Key Open-Source Contributions & Innovations
-
-#### 🌌 **NousResearch / Hermes-Agent Ecosystem**
-- **[PR #103615](https://github.com/NousResearch/hermes-agent/pull/103615) — `fix(agent): apply repetition guard to tool-call arguments to abort degenerate commands (#103599)`**
-  - Closed a critical safety vulnerability where degenerate model repetition loops inside valid JSON tool arguments bypassed the repetition guard and executed runaway pathological commands.
-  - Implemented repetition inspection across streaming tool assembly and turn truncation recovery pipelines.
-- **[PR #103593](https://github.com/NousResearch/hermes-agent/pull/103593) — `fix(ui-tui): provide /recover command and retain session target on gateway recovery exhaustion (#103572)`**
-  - Resolved UI-TUI permanent wedge issue when legitimate supervisor restarts exhaust the automated 3/60s crash-recovery budget.
-  - Retained session recovery targets and engineered a dedicated `/recover` slash command allowing users to cleanly restart the gateway client and resume active sessions.
-- **[PR #103589](https://github.com/NousResearch/hermes-agent/pull/103589) — `fix(gateway): requeue exhausted final response on network outage for redelivery (#103575)`**
-  - Engineered an in-memory outbound delivery recovery buffer and redelivery pipeline for platform adapters (Telegram, Discord, Slack) to prevent generated response loss during sustained network outages.
-- **[PR #103581](https://github.com/NousResearch/hermes-agent/pull/103581) — `fix(agent): preserve external memory-provider tools on review fork for cache parity (#103579)`**
-  - Eliminated prompt-cache misses during background evaluation by preserving byte-exact `tools[]` schema parity on review forks when external memory providers are loaded.
-  - Fixes 60k+ token cold-reads on prefix-caching providers (Fireworks, Anthropic, OpenRouter) with comprehensive unit regression suite.
-- **[PR #103580](https://github.com/NousResearch/hermes-agent/pull/103580) — `feat(tools): add send_file tool for sandbox-to-user file transfer (#466)`**
-  - Designed and engineered the core `send_file` tool solving issue #466 (sandbox-to-user file transfer & media delivery).
-  - Seamless dual extraction across local & sandboxed environments (Docker, SSH, Modal, Singularity, Daytona, Vercel) via binary-safe base64 streaming with gateway media attachment pipeline integration (`MEDIA:<path>`).
-  - Added full test suite with 21/21 unit tests covering security boundaries, device blocking, and size guards.
-- **[PR #103503](https://github.com/NousResearch/hermes-agent/pull/103503) — `feat(skills): add procedural-3d-studio for 3D mesh and game asset generation`**
-  - Designed and built a complete procedural 3D modeling and game asset studio natively for Hermes Agent.
-  - Zero external heavyweight dependencies, generating OBJ, GLTF/GLB, STL, Three.js, and Godot 4 mesh formats.
-- **[PR #103550](https://github.com/NousResearch/hermes-agent/pull/103550) — `feat(plugins): add hf-inspector plugin for Hugging Face model and GGUF quant discovery`**
-  - Tool plugin for querying Hugging Face Hub, inspecting GGUF quantization trees, parameter counts, context limits, and hardware VRAM fit estimations.
-- **[PR #103547](https://github.com/NousResearch/hermes-agent/pull/103547) — `fix(recovery): skip damaged phantom rows violating destination constraints (#102240)`**
-  - Robust SQLite foreign key repair & corruption recovery engine for broken relational databases.
+AI Systems Engineer and Open-Source Contributor specializing in autonomous agent runtimes, LLM protocols, hardware-accelerated computation, and distributed developer tooling.
 
 ---
 
-### 🛠️ Core Tech Stack & Tooling
+### Core Open-Source Work and Contributions
 
-```
-Languages  : Python, TypeScript / JavaScript, Rust, C++
-Runtimes   : Node.js, Bun, PyTorch, llama.cpp, vLLM
-AI / ML    : Hermes-3, Llama-3, Agent Architectures, Function Calling, Prompt Engineering
-Engines    : Three.js, Godot Engine, WebGL, Procedural Mesh Synthesis
-Systems    : Docker, Sandbox Isolation, IPC Protocols, WebSocket / Gateway APIs
-```
+#### elizaOS (Agent Framework & Runtime)
+- **[PR #30620](https://github.com/elizaOS/eliza/pull/30620)** - ix(shared): preserve code indentation during assistant text normalization
+  - Re-architected assistant text normalizer to eliminate sentinel string placeholders and preserve code regions structurally.
+  - Implemented container-aware fence detection and CommonMark §4.5 (Example 137) indentation boundaries, preserving code blocks inside blockquotes, list-nested blocks, and docstrings byte-for-byte without prose contamination.
+- **[PR #30653](https://github.com/elizaOS/eliza/pull/30653)** - ix(app): exclude unpublished local models from setup recommendations
+  - Ensured unpublished local development models do not bleed into global setup recommendations.
+
+#### Tenstorrent tt-metal (Hardware Acceleration & TTNN)
+- **[PR #55567](https://github.com/tenstorrent/tt-metal/pull/55567)** - ix(ttnn): eliminate 16 dead dispatches and discarded where() guards in div_bw
+  - Removed 16 unused device op launches (~70% reduction) in 	tnn.div_bw tensor-tensor backward overload, optimizing memory overhead while maintaining IEEE fp32 gradient semantics.
+- **[PR #55566](https://github.com/tenstorrent/tt-metal/pull/55566)** - ix(ttnn): correct pole sign assignment and preserve positive overflow in atanh_bw
+- **[PR #55565](https://github.com/tenstorrent/tt-metal/pull/55565)** - ix(ttnn): use canonical fp32 SELU constants in python bindings and selu_bw
+
+#### OpenCode (AI Coding Engine & Protocols)
+- **[PR #49616](https://github.com/anomalyco/opencode/pull/49616)** - ix: treat released=0 as unknown date so config-declared models stay visible
+  - Resolved model picker filtering defect where config-declared custom models with epoch release dates were hidden.
+
+#### NousResearch / Hermes-Agent Ecosystem
+- **[PR #103615](https://github.com/NousResearch/hermes-agent/pull/103615)** - ix(agent): apply repetition guard to tool-call arguments to abort degenerate commands
+  - Closed critical safety vulnerability preventing pathological runaway commands in tool arguments.
+- **[PR #103593](https://github.com/NousResearch/hermes-agent/pull/103593)** - ix(ui-tui): provide /recover command and retain session target on gateway recovery exhaustion
+- **[PR #103589](https://github.com/NousResearch/hermes-agent/pull/103589)** - ix(gateway): requeue exhausted final response on network outage for redelivery
+- **[PR #103580](https://github.com/NousResearch/hermes-agent/pull/103580)** - eat(tools): add send_file tool for sandbox-to-user file transfer
+  - Engineered sandbox-to-user file transfer and media delivery pipeline across Docker, SSH, and cloud environments.
+- **[PR #103503](https://github.com/NousResearch/hermes-agent/pull/103503)** - eat(skills): add procedural-3d-studio for 3D mesh and game asset generation
+- **[PR #103550](https://github.com/NousResearch/hermes-agent/pull/103550)** - eat(plugins): add hf-inspector plugin for Hugging Face model and GGUF quant discovery
 
 ---
 
-### 📈 Activity & Focus
-- **Agent Sandbox Protocols**: Building rock-solid, zero-leak file transfer and execution protocols for autonomous code interpreters.
-- **Agent Tooling**: High-leverage skills and CLI tools for developer productivity.
-- **Procedural Toolchains**: Light-weight math-first asset generation for games and simulations.
+### Tech Stack and Focus Areas
 
-📫 *Let's build the open agentic future together.*
+- **Languages:** TypeScript, JavaScript, Python, C++, Rust
+- **Runtimes & Frameworks:** Node.js, Bun, PyTorch, TTNN, Effect-TS, React
+- **Specializations:** Agent Runtimes, CommonMark Parsing, LLM Tool Calling, GPU/Accelerator Kernels, Sandbox Isolation
+- **GitHub Backup Reference:** https://github.com/Aly0xDev
